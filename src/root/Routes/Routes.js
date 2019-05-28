@@ -1,16 +1,31 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 
+import AdminPage from '../../pages/AdminPage';
+import CustomRoute from '../CustomRoute';
 import HomePage from '../../pages/HomePage';
+import LoginPage from '../../pages/HomePage/Login';
 
-const routes = [{ component: HomePage, exact: true, path: '/' }];
+const routes = [
+    { component: HomePage, exact: true, path: '/' },
+    {
+        component: AdminPage,
+        exact: true,
+        options: {
+            fallbackComponent: LoginPage,
+        },
+        path: '/admin',
+    },
+];
 
-const Routes = () => (
-    <Switch>
-        {routes.map(route => (
-            <Route {...route} key={route.path} />
-        ))}
-    </Switch>
-);
+export function Routes() {
+    return (
+        <Switch>
+            {routes.map(route => (
+                <CustomRoute {...route} key={route.path} />
+            ))}
+        </Switch>
+    );
+}
 
 export default Routes;

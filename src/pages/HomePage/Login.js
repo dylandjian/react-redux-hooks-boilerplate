@@ -1,14 +1,14 @@
 import React from 'react';
 
-import Title from '../../components/Title';
 import Wrapper from '../../layouts/Wrapper';
+import LoginForm from '../../containers/LoginForm';
 
-export function MainPage() {
+export function HomePage() {
     return (
         <Wrapper>
-            <Title />
+            <LoginForm />
         </Wrapper>
     );
 }
 
-export default MainPage;
+export default HomePage;

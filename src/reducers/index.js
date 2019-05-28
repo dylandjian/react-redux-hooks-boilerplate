@@ -1,8 +1,7 @@
 import { combineReducers } from 'redux';
 
 import user from './user';
-import friends from './friends';
 
-const reducers = combineReducers({ friends, user });
+const reducers = combineReducers({ user });
 
 export default reducers;

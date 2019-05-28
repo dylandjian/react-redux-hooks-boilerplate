@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-testing-library';
 
-import { MainPage } from '../MainPage';
+import { HomePage } from '../HomePage';
 
-describe('MainPage', () => {
+describe('HomePage', () => {
     it('should render hello', () => {
-        const wrapper = render(<MainPage />);
+        const wrapper = render(<HomePage />);
 
         expect(wrapper).toEqual('lol');
     });

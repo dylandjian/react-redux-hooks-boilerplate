@@ -1,14 +1,17 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
-import Wrapper from '../../layouts/Wrapper';
-import Title from '../../containers/Title';
+import Dashboard from './Dashboard';
+import Login from './Login';
 
 export function HomePage() {
-    return (
-        <Wrapper>
-            <Title />
-        </Wrapper>
-    );
+    const isLogged = useSelector(state => state.user.isLogged);
+
+    if (isLogged) {
+        return <Dashboard />;
+    }
+
+    return <Login />;
 }
 
 export default HomePage;

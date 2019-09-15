@@ -6,8 +6,8 @@
   "scripts": {
     "test": "jest --config ./config/tests/jest.config.js",
     "lint": "eslint '**/*.js'",
-    "dev": "NODE_ENV=development webpack-dev-server --config ./config/webpack/webpack.development.babel.js --progress",
-    "build": "NODE_ENV=production webpack --config ./config/webpack/webpack.production.babel.js --progress"
+    "dev": "NODE_ENV=development webpack-dev-server --config ./config/webpack/webpack.development.js --progress",
+    "build": "NODE_ENV=production webpack --config ./config/webpack/webpack.production.js --progress"
   },
   "license": "MIT",
   "dependencies": {

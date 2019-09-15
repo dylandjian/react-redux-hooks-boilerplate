@@ -4,11 +4,11 @@ import React from 'react';
 import Routes from '../Routes';
 
 const App = () => {
-    return (
-        <BrowserRouter>
-            <Routes />
-        </BrowserRouter>
-    );
+  return (
+    <BrowserRouter>
+      <Routes />
+    </BrowserRouter>
+  );
 };
 
 export default App;

@@ -5,13 +5,13 @@ import Dashboard from './Dashboard';
 import Login from './Login';
 
 export function HomePage() {
-    const isLogged = useSelector(state => state.user.isLogged);
+  const isLogged = useSelector(state => state.user.isLogged);
 
-    if (isLogged) {
-        return <Dashboard />;
-    }
+  if (isLogged) {
+    return <Dashboard />;
+  }
 
-    return <Login />;
+  return <Login />;
 }
 
 export default HomePage;

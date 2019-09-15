@@ -1,40 +1,40 @@
 {
-    "parser": "babel-eslint",
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true,
-        "jest": true
-    },
-    "parserOptions": {
-        "jsx": true,
-        "ecmaVersion": 9,
-        "sourceType": "module"
-    },
-    "plugins": ["prettier", "react", "react-hooks", "import"],
-    "rules": {
-        "prettier/prettier": "error",
-        "import/no-unresolved": [2, { "commonjs": true }],
-        "import/named": 2,
-        "import/namespace": 2,
-        "import/default": 2,
-        "import/export": 2,
-        "import/order": [2, {"newlines-between": "always"}],
-        "sort-keys": 2,
-        "sort-vars": 2,
-        "react-hooks/rules-of-hooks": 2,
-        "react-hooks/exhaustive-deps": 1
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:prettier/recommended",
-        "plugin:react/recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings"
-    ],
-    "settings": {
-        "react": {
-            "version": "16"
-        }
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "parserOptions": {
+    "jsx": true,
+    "ecmaVersion": 9,
+    "sourceType": "module"
+  },
+  "plugins": ["prettier", "react", "react-hooks", "import"],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/no-unresolved": [2, { "commonjs": true }],
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "import/order": [2, { "newlines-between": "always" }],
+    "sort-keys": 2,
+    "sort-vars": 2,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "settings": {
+    "react": {
+      "version": "16"
     }
+  }
 }

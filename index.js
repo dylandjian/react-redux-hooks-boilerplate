@@ -8,12 +8,12 @@ import store from './config/store';
 import './config/initializers/moment';
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('root'),
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'),
 );
 
 if (module.hot) {
-    module.hot.accept();
+  module.hot.accept();
 }

@@ -7,25 +7,25 @@ import HomePage from '../../pages/HomePage';
 import LoginPage from '../../pages/HomePage/Login';
 
 const routes = [
-    { component: HomePage, exact: true, path: '/' },
-    {
-        component: AdminPage,
-        exact: true,
-        options: {
-            fallbackComponent: LoginPage,
-        },
-        path: '/admin',
+  { component: HomePage, exact: true, path: '/' },
+  {
+    component: AdminPage,
+    exact: true,
+    options: {
+      fallbackComponent: LoginPage,
     },
+    path: '/admin',
+  },
 ];
 
 export function Routes() {
-    return (
-        <Switch>
-            {routes.map(route => (
-                <CustomRoute {...route} key={route.path} />
-            ))}
-        </Switch>
-    );
+  return (
+    <Switch>
+      {routes.map(route => (
+        <CustomRoute {...route} key={route.path} />
+      ))}
+    </Switch>
+  );
 }
 
 export default Routes;

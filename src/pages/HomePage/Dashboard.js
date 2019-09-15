@@ -6,15 +6,15 @@ import UsernameTitle from '../../containers/UsernameTitle';
 import LogoutButton from '../../containers/LogoutButton';
 
 export function HomePage() {
-    return (
-        <div>
-            <Link to="/admin">Admin page</Link>
-            <Wrapper>
-                <UsernameTitle />
-                <LogoutButton />
-            </Wrapper>
-        </div>
-    );
+  return (
+    <div>
+      <Link to="/admin">Admin page</Link>
+      <Wrapper>
+        <UsernameTitle />
+        <LogoutButton />
+      </Wrapper>
+    </div>
+  );
 }
 
 export default HomePage;
